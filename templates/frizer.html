@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="/assets/css/bootstrap.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/frizerski-salon.css">
+        <title>frizerski salon</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script>
+            $('#myModal').on('shown.bs.modal');
+        </script>
+    </head>
+
+    <body>
+        <!--GLAVA -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="assets/pics/s.jpg" alt="salon" width="60" height="60"/>
+                </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#liner1">Storitve</a></li>
+                    <li><a href="#liner2">Naroči se</a></li>
+                    <li><a href="#liner3">FAQ</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">O nas</a></li>
+                    <input type="text" name="search" placeholder="">
+                </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <!--konec GLAVA -->
+        <div class="container">
+            <!--KARUSEL -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="assets/pics/salon.jpg" alt="salon">
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/pics/kita.jpg" alt="kita">
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/pics/produkti.jpg" alt="produkti">
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- konec KARUSEL -->
+
+        <!-- STORITVE -->
+        <div id="liner1">
+            <h1>Storitve</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Nega las</h3>
+                            <img src="assets/pics/nega-icon.png" alt="nega-icon" class="panel-icon" width="30" height="30"/>
+                        </div>
+                        <div class="panel-body">
+                            <img src="assets/pics/nega.jpg" alt="nega" class="img-responsive"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Barvanje</h3>
+                            <img src="assets/pics/barvanje-icon.svg" alt="barvanje-icon" class="panel-icon" width="30" height="30"/>
+                        </div>
+                        <div class="panel-body">
+                            <img src="assets/pics/barvanje.jpg" alt="barvanje" class="img-responsive"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Striženje</h3>
+                            <img src="assets/pics/strizenje-icon.svg" alt="strizenje-icon" class="panel-icon" width="30" height="30"/>
+                        </div>
+                        <div class="panel-body">
+                            <img src="assets/pics/strizenje.jpg" alt="strizenje" class="img-responsive"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- konec STORITVE -->
+        <!-- NAROČI SE -->
+        <div id="liner2">
+            <h1>Naroči se</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-1" for="name"></label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="name" placeholder="Ime in Priimek:">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-1" for="phone"></label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="phone" placeholder="Telefonska številka:">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-1" for="dates"></label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="dates" placeholder="Želen termin:">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-1" for="whishes"></label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="dates" placeholder="Dodatne želje:">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-1 col-sm-10">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox"> Potrjujem točnost podatkov</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-1 col-sm-1">
+                                        <button type="submit" class="btn btn-default">Pošlji</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="panel panel-primary">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>DAN</th>
+                                        <th>ODPIRALNI ČAS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="info">
+                                        <td>Ponedeljek</td>
+                                        <td>08:00 - 18:00</td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td>Torek</td>
+                                        <td>08:00 - 18:00</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td>Sreda</td>
+                                        <td>08:00 - 18:00</td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td>Četrtek</td>
+                                        <td>08:00 - 18:00</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td>Petek</td>
+                                        <td>08:00 - 16:00</td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td>Sobota</td>
+                                        <td>07:00 - 13:00</td>
+                                    </tr>
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- konec NAROČI SE -->
+        <!-- FAQ -->
+        <div id="liner3">
+            <h1>FAQ</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Vprašanje 1</h3>
+                </div>
+                <div class="panel-body">
+                    Odgovor
+                </div>
+                <div class="panel-heading">
+                    <h3 class="panel-title">Vprašanje 2</h3>
+                </div>
+                <div class="panel-body">
+                    Odgovor
+                </div>
+                <div class="panel-heading">
+                    <h3 class="panel-title">Vprašanje 3</h3>
+                </div>
+                <div class="panel-body">
+                    Odgovor
+                </div>
+                <div class="panel-heading">
+                    <h3 class="panel-title">Vprašanje 4</h3>
+                </div>
+                <div class="panel-body">
+                    Odgovor
+                </div>
+                <div class="panel-heading">
+                    <h3 class="panel-title">Vprašanje 5</h3>
+                </div>
+                <div class="panel-body">
+                    Odgovor
+                </div>
+            </div>
+        </div>
+        <!-- konec FAQ -->
+        <!-- NOGA-->
+        <div id="liner4">
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="panel panel-primary brez-obrobe">
+                        <div class="panel-body">
+                            <h3>KONTAKT</h3>
+                            <h6>Ime in priimek s.p.</h6>
+                            <h6>Ulica</h6>
+                            <h6>Pošta</h6>
+                            <h6>Davčna št.</h6>
+                            <h6>Telefon</h6>
+                            <h6>e-mail</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-primary brez-obrobe">
+                        <div class="panel-body">
+                             <div id="map">
+                                 <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7111.624319402933!2d15.725909353944681!3d46.589095557309044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x476f7151f04ba82f%3A0x67bf786f7d95137f!2sPerni%C5%A1ko+jezero%2C+2231+Pernica!3m2!1d46.5894774!2d15.7265252!5e0!3m2!1ssl!2ssi!4v1504459302619" frameborder="0" style="border:0" allowfullscreen></iframe>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-primary brez-obrobe">
+                        <div class="panel-body">
+                            <h3>Navigacija</h3>
+                            <h6>Storitve</h6>
+                            <h6>Naročite se</h6>
+                            <h6>FAQ</h6>
+                            <h6>O nas</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- konec NOGA-->
+        <!-- O NAS-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Frizerski salon</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet velit vel fermentum convallis. Pellentesque ornare bibendum purus vitae viverra. Fusce non nulla ac lectus efficitur dignissim. Quisque pharetra fermentum commodo. Proin odio libero, fermentum ac gravida id, cursus id erat. Curabitur lacinia vitae lacus in congue. Suspendisse ut lorem eget augue faucibus molestie. Donec sollicitudin sit amet risus quis pulvinar. Praesent diam sapien, aliquam vel lectus non, dapibus suscipit metus. Pellentesque vel ligula vel nisl pretium mollis. Cras vel hendrerit diam. Nulla tristique, lacus porttitor tempor sagittis, nibh nibh tristique diam, in egestas ligula tellus vel odio. Sed pretium sapien nibh, non luctus lectus accumsan ut. Donec feugiat dapibus ornare. Integer iaculis laoreet eros, quis pulvinar risus pretium et. &hellip;</p>
+                    </div>
+                    <img src="assets/pics/slika.jpg" class="img-responsive">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zapri</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- konec O NAS-->
+    </body>
+</html>
